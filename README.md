@@ -6,7 +6,15 @@ get_column_stats.py is a file that can take an input file (requires an str file 
 
 
 #how to use your project, with examples
+example.csv is an example input file. You should be able to add this file to your directory and run it:  
+'''
+python get_column_stats.py example.csv 9 
+'''
 
+This should print: 
+Mean 172.6667
+Stdev 337.8953
+ 
 
 
 #how to install 
