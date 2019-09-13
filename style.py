@@ -109,7 +109,7 @@ finally:
 
 one()
 two()
-five(I, O, k, l, x)
+five(Im, Os, ka, ls, x)
 
 if foo == 'blah':
     one()
