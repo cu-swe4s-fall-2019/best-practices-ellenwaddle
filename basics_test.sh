@@ -1,3 +1,10 @@
+test -e ssshtest || wget -qhttps://raw.githubusercontent.com/ryanlayer/ssshtest/master/ssshtest
+. ssshtest
+
+
+run python get_column_stats.py example.csv 9
+assert_exit_code 0
+
 pycodestyle style.py
 
 pycodestyle get_column_stats.py
@@ -15,3 +22,4 @@ V=1
 done )> data.txt
 
 python get_column_stats.py data.txt 2
+
