@@ -3,9 +3,7 @@ import math
 import argparse
 
 
-parser=argparse.ArgumentParser(
-	description='supply numbers',
-	prog='bay')
+parser = argparse.ArgumentParser(description='supply numbers', prog='bay')
 
 parser.add_argument('​--file_name​', ​type​=​str​,
                     help​=​'Name of the file'​, required=​True​)
@@ -26,7 +24,7 @@ except FileNotFoundError:
 except​ ​PermissionError​:
     print​(​'Could not open '​ + file_name)
     sys.exit(1)
-​finally​: ​
+​finally​:
     return​ f
 
 V = []
