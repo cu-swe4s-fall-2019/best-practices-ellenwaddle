@@ -36,7 +36,6 @@ for l in f:
     except ValueError:
         sys.exit(1)
 
-print(V)
 
 def mean(V):
     return sum(V)/len(V)
