@@ -33,7 +33,8 @@ for l in f:
     try:
         A = [int(x) for x in l.split()]
         V.append(A[args.column_number-1])
-    except: ValueError
+    except ValueError:
+        sys.exit(1)
 
 print(V)
 
