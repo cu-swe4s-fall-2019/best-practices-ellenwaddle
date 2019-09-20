@@ -11,7 +11,6 @@ example.txt is an example input file. You should be able to add this file to you
 `python get_column_stats.py example.txt 1`
 '''
 
-
 #SETUP
 
 `conda update --yes conda
