@@ -19,7 +19,7 @@ if args.column_number < 0:
     sys.exit(1)
 
 try:
-    f = open(args.file_name, 'r')
+    f = open(args.file_name, 'r')  # open file of interest
 except FileNotFoundError:
     print('Could not locate' + file_name)
     sys.exit(1)
@@ -32,20 +32,22 @@ V = []
 
 for l in f:
     try:
-        A = [int(x) for x in l.split()]
+        A = [int(x) for x in l.split()]  # go through each line
         V.append(A[args.column_number-1])
     except ValueError:
         sys.exit(1)
 
+
 def mean(V):
     return sum(V)/len(V)
+
 
 def stdev(V):
     return math.sqrt(sum([(mean(V)-x)**2 for x in V]) / len(V))
 
 
-print('mean:', mean(V))
-print('stdev:', stdev(V))
+print('mean:', mean(V))  # show output of mean to user
+print('stdev:', stdev(V))  # show output of mean to user
 
 if __name__ == 'main':
     unittest.main()
