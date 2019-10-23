@@ -1,6 +1,9 @@
 import sys
 import math
 import argparse
+"""
+grab a column out of a specified file and returns mean and stdev of that column
+"""
 
 parser = argparse.ArgumentParser(description='supply file & colnum',
                                  prog='good way')
@@ -39,10 +42,16 @@ for l in f:
 
 
 def mean(V):
+    """
+    defines the mean fct
+    """
     return sum(V)/len(V)
 
 
 def stdev(V):
+    """
+    defines the mean fct
+    """
     return math.sqrt(sum([(mean(V)-x)**2 for x in V]) / len(V))
 
 
