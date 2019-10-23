@@ -1,11 +1,11 @@
-import unittest
-import get_column_stats
-import sys
-import so
+#import unittest
+#import get_column_stats
+#import sys
+#import so
 
 #check code styling for all files
-pycodestyle style.py
-pycodestyle get_column_stats.py
+#pycodestyle style.py
+#pycodestyle get_column_stats.py
 
 test -e ssshtest || wget -qhttps://raw.githubusercontent.com/ryanlayer/ssshtest/master/ssshtest
 . ssshtest
