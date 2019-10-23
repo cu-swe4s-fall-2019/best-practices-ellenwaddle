@@ -13,8 +13,7 @@
 
 # Setup
 
-'''
-conda update --yes conda
+`conda update --yes conda
 conda config --add channels bioconda
 conda install pycodestyle
 echo ". $HOME/miniconda3/etc/profile.d/conda.sh" >> $HOME/.bashrc
@@ -22,5 +21,4 @@ bash basics_test.sh
 
 import sys
 import pycodestyle
-import os
-'''
+import os`
