@@ -14,7 +14,7 @@ args = parser.parse_args()
 print(args.file_name, args.column_number)
 
 
-if args.column_number < 1:
+if args.column_number < 0:
     print('Must have at least one column')
     sys.exit(1)
 
@@ -29,6 +29,7 @@ except PermissionError:
 
 
 V = []
+
 for l in f:
     try:
         A = [int(x) for x in l.split()]
@@ -36,10 +37,8 @@ for l in f:
     except ValueError:
         sys.exit(1)
 
-
 def mean(V):
     return sum(V)/len(V)
-
 
 def stdev(V):
     return math.sqrt(sum([(mean(V)-x)**2 for x in V]) / len(V))
